@@ -4,3 +4,6 @@ the verde river data over the period of
 30 years. Still learning how to use python and
 navigate between the different guis we
 are utilizing. Looking forward to learning more!
+
+## Grade
+3/3 - nice job!
