@@ -111,3 +111,62 @@ hastools.path.exists()
 # %%
 os.path.exists()
 # %%
+import os 
+import numpy as np
+import earthpy as et 
+# %%
+avg_month_precip_url = 'https://ndownloader.figshare.com/files/12565616'
+et.data.get_data(url=avg_month_precip_url)
+os.chdir(os.path.join(et.io.HOME, 'earth-analytics'))
+avg_month_precip_path = os.path.join("data", "earthpy-downloads", 
+                                     "avg-monthly-precip.txt")
+# %%
+if os.path.exists(avg_month_precip_path):
+    print("This is a valid path.")
+else:
+    print("This path does not exist.")
+# %%
+if os.path.exists(avg_month_precip_path):
+    avg_month_precip = np.loadtxt(avg_month_precip_path)
+    print(avg_month_precip)
+else:
+    print("This path does not exist.")
+# %%
+x=5
+y=10
+if x < y:
+    print("x started with value of", x)
+    x += 5
+    print("It now has a value of", x, "which is equal to y.")
+elif x > y:
+    print("x started with value of", x)
+    x -= 5
+    print("It now has a value of", x, "which is equal to y.")
+
+else:
+    print("x started with a value of", x, "which is already equal to y.")
+
+# %%
+x=10
+if x < y:
+    print("x started with value of", x)
+    x += 5
+    print("It now has a value of", x, "which is equal to y.")
+
+elif x > y:
+    print("x started with value of", x)
+    x -= 5
+    print("It now has a value of", x, "which is equal to y.")
+
+else:
+    print("x started with a value of", x, "which is already equal to y.")
+# %%
+list_of_values =[1,2,3,4,5,6,7,8]
+print(list_of_values)
+# %%
+for avalue in list_of_values:
+    print(avalue)
+for avalue in list_of_values:
+    print("the current value is:", avalue+1)
+
+# %%
