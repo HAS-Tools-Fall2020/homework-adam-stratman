@@ -170,3 +170,64 @@ for avalue in list_of_values:
     print("the current value is:", avalue+1)
 
 # %%
+os.path.join("data")
+# %%
+my_path = os.path.join("Python")
+# %%
+import os
+import earthpy as et 
+
+getcwd[]
+# %%
+os.path.join("earth-analytics", "data")
+my_path = os.path.join("earth-analytics", "data")
+# %%
+os.path.exists(my_path)
+# %%
+chdir("path-to-dir")
+# %%
+
+print(get.cwd)
+# %%
+os.getcwd()
+# %%
+os.chdir(path_to_dir)
+# %%
+os.chdir()
+
+# %%
+et.io.HOME
+# %%
+os.path.exists(et.io.Home)
+# %%
+my_ea_path = os.path.join(et.io.HOME, "earth-analytics")
+
+# %%
+os.path.exists(my_ea_path)
+
+# %%
+my_ea_path = os.path.join(et.io.HOME, "earth-analytics")
+
+# %%
+os.mkdir("path/to/dir/here")
+# %%
+os.mkdir(my_ea_path)
+# %%
+import matplotlib
+# %%
+import numpy as np 
+
+# %%
+print(avg_month_precip)
+# %%
+avg_monthly_precip = np.array([0.70, 0.75, 1.85])
+# %%
+print(avg_monthly_precip)
+# %%
+precip_2002_2013 = np.array([
+    [1.07, 0.44, 1.50],
+    [0.27, 1.13, 1.72]
+])
+# %%
+print(precip_2002_2013)
+# %%
