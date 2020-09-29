@@ -2,6 +2,9 @@
 --------
 Assignment 5
 ----
+
+#  Grade
+2.5/3 Nice job with the python but your submission was really hard to read because it has no formatting. Next time make sure to number or bold the questions and bullet point your responses or something  so that they can be easily found. You can always preview your markdown to see how its looking. If you have having trouble with that just come by my office hours or send me an email. Also I'm not seeing your graphh for #5 maybe you didn't push this? 
 ----
 
 ## Assignment questions
