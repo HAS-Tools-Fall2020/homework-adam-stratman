@@ -6,6 +6,13 @@ Homework 6
 
 Week 6 Questions
 
+### Grade
+3/3 - Tanks for working on the formatting. this is much better! Nice graphs and analysis too.
+
+One additional note - Please only put the things that will be graded in this submission folder. If not it gets hard for me to find things. You can move any starter codes or temporary markdown files to other folders. Also for your images if you use the suggested plugin it will put them all into a folder for you.
+
+____
+
 ## Provide a summary of the AR model that you ended up building, including:
 
 #### (1) what you are using as your prediction variables
