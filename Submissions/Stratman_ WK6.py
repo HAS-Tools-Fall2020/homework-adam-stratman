@@ -52,7 +52,7 @@ flow_weekly['flow_tm2'] = flow_weekly['flow'].shift(2)
 flow_weekly['flow_tm3'] = flow_weekly['flow'].shift(3)
 
 # Setup 2 - pick what portion of the time series you want to use as training data
-# here I'm grabbing the 370(1996)-600(2000) weeks 
+# here I'm grabbing the 370(year 1996)-600(year 2000) weeks 
 # Note1 - dropping the first two weeks since they wont have lagged data
 # to go with them  
 train = flow_weekly[370:600][['flow', 'flow_tm1', 'flow_tm2','flow_tm3']]
@@ -70,6 +70,11 @@ r_sq = model.score(x, y)
 print('coefficient of determination:', np.round(r_sq,2))
 print('intercept:', np.round(model.intercept_, 2))
 print('slope:', np.round(model.coef_, 2))
+
+# Step 4 Make a prediction with your model 
+# Predict the model response for a  given flow value
+q_pred_train = model.predict(train['flow_tm1'].values.reshape(-1,1))
+q_pred_test = model.predict(test['flow_tm1'].values.reshape(-1,1))
 
 # looking at one week time lag as to make prediciton 
 # %%
