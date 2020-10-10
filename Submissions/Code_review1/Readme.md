@@ -5,7 +5,7 @@
 ---
 #### INSTRUCTIONS
 
-Step 1) Obtain the text file that has the streamflow data file in it. This is located in the Code_review1 folder in the folder named data. Save it to your computer and then create the appropriate pathway in order to run the cade.
+Step 1) Obtain the text file that has the streamflow data file in it. This is located in the Code_review1 folder in the folder named data. Save it to your computer and then create the appropriate pathway in order to run the code.
 
 
 
