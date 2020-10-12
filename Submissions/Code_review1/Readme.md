@@ -44,7 +44,7 @@ And of course remember to always be courteous to the person you are reviewing!
 2. Does the code follow PEP8 style consistently?
 
   **SCORE: 2**
- - If not are there specific instances where the script diverges from this style? **Yes. Accordingly to FLAKES8, it presents 30 PEP8 style problems. The most commons are:
+ - If not are there specific instances where the script diverges from this style? **Yes. Accordingly to FLAKES8, it presents 30 PEP8 style problems. The most commons are:**
     - line too long. At lines: 21, 22, 24, 28, 29, 31, 98, 127, 128.
     - Missing whitespace after `,`
 
