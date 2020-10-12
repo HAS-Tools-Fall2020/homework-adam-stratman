@@ -125,3 +125,34 @@ print("AR prediciton based on previous 1 week=", prediction.round(1))
 print("AR prediciton based on previous 2 weeks=", prediction2.round(1))
 print("Please use this number as my week 1 prediciton=", my_prediction1.round(1))
 print("Please use this number as my week 2 prediciton=", my_prediction2.round(1))
+
+# %%
+# Alcely's recommendation
+# Creating the function without a correction factor. This way you can use
+# it in lines 93, 112, 118 and 119.
+
+
+def real_prediction(indexnumber, last_week_flow, last2_week_flow=None):
+    ''''
+    This function is taking the linear regression prediction WITHOUT
+    a factor to bring it down to a more reasonable value for the forecast
+    of week 1.
+    '''
+    if indexnumber == 0 and last2_week_flow is None:
+        rp = (model.intercept_ + model.coef_[indexnumber] * last_week_flow)
+    if indexnumber == 1:
+        rp = (model2.intercept_ + model2.coef_[0] * last_week_flow +
+              model2.coef_[indexnumber] * last2_week_flow)
+    if indexnumber != 0 and indexnumber != 1:
+        print('The index number =', indexnumber, 'is not valid. Enter 0 or 1.')
+    return rp
+
+# %%
+# testing Alcely's function
+
+
+# apply the correction factor outside the function
+prediction = real_prediction(1, 57.2, 58.4)*0.64
+print(prediction.round(1))
+
+# %%
