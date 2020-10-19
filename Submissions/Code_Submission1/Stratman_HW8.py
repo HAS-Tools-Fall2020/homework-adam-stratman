@@ -162,4 +162,3 @@ forecast_16_week = ((weekly_2019_mins +
                      np.roll(weekly_2019_mins, 1))/2.0)[1::1]
 print("These will serve as my 16 week forecast values", forecast_16_week)
 
-# %%
