@@ -2,6 +2,14 @@
 ## Adam Stratman
 ### 10/18/2020
 
+#### Grade 
+ - 6/6  Great  job!
+ - Readability: 3
+ - Style: 3 
+ - Code: 3 
+
+ - I really like the error checking you added to your function. 
+ - Very clean and easy to follow cod and gread job with the commenting.
 
 #### Written Assignment
 

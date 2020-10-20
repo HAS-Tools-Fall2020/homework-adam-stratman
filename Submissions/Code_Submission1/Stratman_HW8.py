@@ -68,6 +68,9 @@ flow_weekly['flow_tm2'] = flow_weekly['flow'].shift(2)
 # %%
 # Here I'm grabbing weeks from 1996-2000 as training dates
 # For the test it runs from 2000 to most current time in data
+
+# LC - You could think about having these date ranges be variable you 
+# define at the top 
 train = flow_weekly[370:600][['flow', 'flow_tm1', 'flow_tm2']]
 test = flow_weekly[600:][['flow', 'flow_tm1', 'flow_tm2']]
 
@@ -89,6 +92,8 @@ print('slope:', np.round(model.coef_, 2))
 # %%
 # Looking at one week time lag to make prediciton
 # Looking at prediction based on previous week 10/4-10/10
+# LC - Also it can be nice for the user if you put all the user defined 
+# values like this at the top of the script 
 last_week_flow = 61.8
 prediction = model.intercept_ + model.coef_ * last_week_flow
 print("prediciton based on previous week=", prediction)
@@ -108,7 +113,7 @@ print('slope:', np.round(model2.coef_, 2))
 
 # %%
 # Using two weeks prior to make prediciton 9/27-10/3
-last2_week_flow = 57.2
+last2_week_flow = 57.2 #see comment above
 prediction2 = model2.intercept_ + model2.coef_[0] * last_week_flow
 + model2.coef_[1] * last2_week_flow
 print("prediciton based on previous 2 weeks=", prediction2)
@@ -118,7 +123,9 @@ print("prediciton based on previous 2 weeks=", prediction2)
 # Making my predictions outside of the AR model
 # This utilizes a correction factor calculated by looking at the AR model value
 # And comparing it to previous weeks observed flow
-my_prediction_1 = real_prediction(0, 61.8, None)*0.70
+
+# LC - Should use your variables here rather than the 61.8 and 57.2 numbers directly
+my_prediction_1 = real_prediction(0, 61.8, None)*0.70 
 my_prediction_2 = real_prediction(1, 61.8, 57.2)*.74
 print("week 1 prediction outside AR=", my_prediction_1.round(1))
 print("week 2 prediction outside AR=", my_prediction_2.round(1))
