@@ -6,6 +6,9 @@ Homework 6
 
 #### Written Assignment
 
+### Grade
+3/3 - Nice work! See below I fixed the reference to your precip graph in Atom. Not sure I quite understand the issue you are describing on the Python side. 
+
 ### 1. A brief summary of the how you chose to generate your forecast this week.
 
 I chose to use the modified version of my AR model from last week. It is a linear regression multiplied by a correction factor. Fingers crossed as now that we are entering out of the heat we will see more variance in the flow I think.
@@ -21,5 +24,4 @@ I Am not sure why, but when I saved the graphs in python It is saving them as th
 
 ![](Observed_Flow.png)
 
-![](fig.savefig()     
-)     
+![](data_precip.png)     
