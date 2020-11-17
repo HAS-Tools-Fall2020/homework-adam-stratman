@@ -7,6 +7,7 @@ Homework 12
 #### Written Assignment
 
 ### Grade
+3/3 - Nice work!
 
 
 ### 1. A brief summary of the how you chose to generate your forecast this week.
