@@ -1,0 +1,16 @@
+coefficient of determination: 0.7
+intercept: 0.84
+slope: [0.84]
+AR prediciton based on previous week= [133.54]
+coefficient of determination: 0.7
+intercept: 0.82
+slope: [0.82 0.02]
+AR prediciton based on previous 2 weeks= 130.56472248422102
+week 1 prediction outside AR= [173.4]
+week 2 prediction outside AR= [189.1]
+AR prediciton based on previous 1 week= [133.5]
+AR prediciton based on previous 2 weeks= 130.6
+These will serve as my 16 week forecast values [  45.31   37.51   58.35   64.91   55.5    80.73   94.9    88.44   85.94
+   83.62   98.91  119.43  130.79  167.29  296.79 1078.64]
+Your group tmeixner has been charged 0:00:16 (0:00:16 X 1 cpus).
+You previously had 35999:46:34.  You now have 35999:46:18 of standard_time remaining
