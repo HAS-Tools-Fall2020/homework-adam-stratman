@@ -6,7 +6,7 @@ Homework 15
 Last assignment
 
 ### Grade
-
+3/3 - Nice work! Glad you got it running. I wish we had time to do more examples and really take advantage of what HPC has to offer.
 
 
 ### What resources did you request on Ocelote? How long did you wait in the queue for your job to run and how long did it take to run?
